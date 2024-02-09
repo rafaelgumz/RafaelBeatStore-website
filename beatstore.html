@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafaelBeat Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #logo {
+            max-width: 100px; /* Set a maximum width for the logo */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+
+        nav select {
+            padding: 0.5em 1em;
+            margin: 0 1em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .beat-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2em;
+            background-color: white;
+            width: 300px;
+        }
+
+        .album-logo {
+            width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        .beat-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px; /* Adjust the max-height based on your preference */
+        }
+
+        .beat-details {
+            padding: 1em;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .purchase-btn {
+            display: block;
+            width: 100%;
+            padding: 0.5em;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="rafaellogo.png" alt="Your Logo" id="logo">
+        <h1>RafaelBeat Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#beats">All Beats</a>
+            <select id="categoryDropdown">
+                <option value="#allBeats">All Beats</option>
+                <option value="#tygaBeats">Tyga Type Beats</option>
+                <option value="#dababyBeats">K-Pop Type Beat x BTS Type Beat</option>
+                <option value="#ComingSoon">Coming Soon</option>
+            </select>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <main id="home">
+        <h2>Welcome to RafaelBeat Store!</h2>
+        <p>Explore our collection of high-quality beats and find the perfect sound for your project.</p>
+    </main>
+
+    <main id="beats">
+        <section id="allBeats">
+            <!-- Beat 1 -->
+            <div class="beat-card tygaBeat">
+                <img src="Beat1.png" alt="Beat 1" class="beat-image">
+                <div class="beat-details">
+                    <h3>Tyga Type Beat 2023 - Big One - Club Banger Type Beat - RapTrap Instrumental</h3>
+                    <p>Buy (UnTagged)</p>
+                    <p>♦ BPM : 100</p>
+                    <p>♦ Key : D Minor</p>
+                    <audio controls class="audio-player">
+                        <source src="Tyga Type Beat 2023  Big One  Club Banger Type Beat  RapTrap Instrumental.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $19.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Beat 2 -->
+            <div class="beat-card tygaBeat">
+                <img src="Beat2.png" alt="Beat 2" class="beat-image">
+                <div class="beat-details">
+                    <h3>FREE Tyga Type Beat - SAX PT 2 - Free Offset Type Beat 2023 - Free Club Instrumental 2023</h3>
+                    <p>Purchase | Instant Delivery (Untagged)</p>
+                    <audio controls class="audio-player">
+                        <source src="FREE Tyga Type Beat  SAX PT 2  Free Offset Type Beat 2023  Free Club Instrumental 2023.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $24.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+
+            <!-- Continue adding more beats (Beat 3 to Beat N) -->
+        </section>
+
+        <section id="tygaBeats" class="hidden">
+            <!-- Include Tyga Type Beats content here -->
+            <!-- For now, just include Beat 1 and Beat 2 -->
+            <div class="beat-card">
+                <img src="Beat1.png" alt="Beat 1" class="beat-image">
+                <div class="beat-details">
+                    <h3>Tyga Type Beat - Bando | Club Banger Instrumental | Free Club Type Beat 2019</h3>
+                    <p>Purchase a lease to use this instrumental commercially. 
+                        Failure to comply will result in a COPYRIGHT STRIKE.</p>
+                    <audio controls class="audio-player">
+                        <source src="Tyga Type Beat 2023  Big One  Club Banger Type Beat  RapTrap Instrumental.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $19.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+
+            <div class="beat-card"> 
+                <img src="Beat2.png" alt="Beat 2" class="beat-image">
+                <div class="beat-details">
+                    <h3>[FREE] Fast Aggressive 808 Rap Beat "JAWS" | Dark Hip Hop Instrumental | Free Type Beat</h3>
+                    <p>Purchase | Instant Delivery (Untagged)</p>
+                    <audio controls class="audio-player">
+                        <source src="FREE Fast Aggressive 808 Rap Beat JAWS  Dark Hip Hop Instrumental  Free Type Beat .mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $24.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="dababyBeats" class="hidden">
+             <!-- Include Tyga Type Beats content here -->
+            <!-- For now, just include Beat 1 and Beat 2 -->
+            <div class="beat-card">
+                <img src="Don't Leave Yet.png" alt="Beat 1" class="beat-image">
+                <div class="beat-details">
+                    <h3>KPop Type Beat x BTS Type Beat  Dont Leave Yet Prod Pacific</h3>
+                    <p>Purchase a lease to use this instrumental commercially. 
+                        Failure to comply will result in a COPYRIGHT STRIKE.</p>
+                    <audio controls class="audio-player">
+                        <source src="KPop Type Beat x BTS Type Beat  Dont Leave Yet Prod Pacific.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $19.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+
+            <div class="beat-card">
+                <img src="FLAME ON.png" alt="Beat 2" class="beat-image">
+                <div class="beat-details">
+                    <h3>K-Pop Type Beat - “FLAME ON” | HyperPop Type Beat</h3>
+                    <p>Purchase | Instant Delivery (Untagged)</p>
+                    <audio controls class="audio-player">
+                        <source src="KPop Type Beat  FLAME ON  HyperPop Type Beat.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p>Price: $24.99</p>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add more sections for other categories -->
+    </main>
+
+    <main id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need support? Reach out to us:</p>
+        <p>rafaelbeatstore@gmail.com</p>
+        <!-- Add your contact form or contact information here -->
+    </main>
+
+    <script>
+        // JavaScript to handle dropdown navigation
+        document.getElementById('categoryDropdown').addEventListener('change', function () {
+            var selectedCategory = this.value;
+            showCategory(selectedCategory);
+        });
+
+        function showCategory(category) {
+            // Hide all sections
+            document.querySelectorAll('main section').forEach(function (section) {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.querySelector(category).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
